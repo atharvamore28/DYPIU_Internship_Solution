@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Plantation Drive Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Tree Plantation Drive Tracker</h1>
+        <form id="plantationForm">
+            <div class="form-group">
+                <label for="volunteerName">Volunteer's Name:</label>
+                <input type="text" id="volunteerName" name="volunteerName" required>
+            </div>
+            <div class="form-group">
+                <label for="volunteerAge">Volunteer's Age:</label>
+                <input type="number" id="volunteerAge" name="volunteerAge" required>
+            </div>
+            <div class="form-group">
+                <label for="saplingName">Name of the Sapling:</label>
+                <input type="text" id="saplingName" name="saplingName" required>
+            </div>
+            <div class="form-group">
+                <label for="saplingCost">Cost of the Sapling (₹):</label>
+                <input type="number" id="saplingCost" name="saplingCost" required>
+            </div>
+            <div class="form-group">
+                <label for="driveDate">Date of Tree Plantation Drive:</label>
+                <input type="date" id="driveDate" name="driveDate" required>
+            </div>
+            <button type="submit">Add Record</button>
+        </form>
+
+        <h2>Plantation Records</h2>
+        <table id="recordsTable">
+            <thead>
+                <tr>
+                    <th>Volunteer Name</th>
+                    <th>Volunteer Age</th>
+                    <th>Name of the Sapling</th>
+                    <th>Cost of the Sapling (₹)</th>
+                    <th>Date of Drive</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Plantation records will appear here -->
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Total Number of Trees Planted: <span id="totalTrees">0</span></p>
+            <p>Total Cost of the Drive (₹): <span id="totalCost">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
